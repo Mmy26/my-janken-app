@@ -9,7 +9,7 @@
 import SwiftUI
 
 @main
-struct my_janken_appApp: App {
+struct MyJankenApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

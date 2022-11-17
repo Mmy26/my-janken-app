@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		72EF1FB929265EF100329A30 /* my_janken_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EF1FB829265EF100329A30 /* my_janken_appApp.swift */; };
+		72EF1FB929265EF100329A30 /* MyJankenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EF1FB829265EF100329A30 /* MyJankenApp.swift */; };
 		72EF1FBB29265EF100329A30 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EF1FBA29265EF100329A30 /* ContentView.swift */; };
 		72EF1FBD29265EF400329A30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72EF1FBC29265EF400329A30 /* Assets.xcassets */; };
 		72EF1FC029265EF400329A30 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72EF1FBF29265EF400329A30 /* Preview Assets.xcassets */; };
@@ -15,7 +15,7 @@
 
 /* Begin PBXFileReference section */
 		72EF1FB529265EF100329A30 /* my-janken-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "my-janken-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		72EF1FB829265EF100329A30 /* my_janken_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = my_janken_appApp.swift; sourceTree = "<group>"; };
+		72EF1FB829265EF100329A30 /* MyJankenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyJankenApp.swift; sourceTree = "<group>"; };
 		72EF1FBA29265EF100329A30 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		72EF1FBC29265EF400329A30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		72EF1FBF29265EF400329A30 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -51,7 +51,7 @@
 		72EF1FB729265EF100329A30 /* my-janken-app */ = {
 			isa = PBXGroup;
 			children = (
-				72EF1FB829265EF100329A30 /* my_janken_appApp.swift */,
+				72EF1FB829265EF100329A30 /* MyJankenApp.swift */,
 				72EF1FBA29265EF100329A30 /* ContentView.swift */,
 				72EF1FBC29265EF400329A30 /* Assets.xcassets */,
 				72EF1FBE29265EF400329A30 /* Preview Content */,
@@ -138,7 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				72EF1FBB29265EF100329A30 /* ContentView.swift in Sources */,
-				72EF1FB929265EF100329A30 /* my_janken_appApp.swift in Sources */,
+				72EF1FB929265EF100329A30 /* MyJankenApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
