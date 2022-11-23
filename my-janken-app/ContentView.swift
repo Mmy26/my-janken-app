@@ -14,10 +14,14 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
+            // スペースを追加
+            Spacer()
             // じゃんけんの数字が0だったら
             if answerNumber == 0 {
                 // 初期画面のテキストを表示
                 Text("これからじゃんけんをします！")
+                // 下辺に余白を設定
+                    .padding(.bottom)
             }else if answerNumber == 1 {
                 // じゃんけんの数字が1だったら、グーの画像を指定
                 // 画像を指定
@@ -26,10 +30,12 @@ struct ContentView: View {
                     .resizable()
                 // アスペクト比を維持する指定
                     .scaledToFit()
+                // スペースを追加
+                Spacer()
                 // じゃんけんの種類を指定
                 Text("グー")
-                
-
+                // 下辺に余白を設定
+                    .padding(.bottom)
             } else if answerNumber == 2 {
                 // じゃんけんの数字が2だったら、チョキの画像を指定
                 Image("pa")
@@ -37,8 +43,12 @@ struct ContentView: View {
                     .resizable()
                 // 画面に収まるように、アスペクト比を維持する指定
                     .scaledToFit()
+                // スペースを追加
+                Spacer()
                 // じゃんけんの種類を指定
                 Text("パー")
+                // 下辺に余白を設定
+                    .padding(.bottom)
             } else {
                 // じゃんけんの数字が[1],[2]以外だったら、パー画像を指定
                 Image("choki")
@@ -46,8 +56,12 @@ struct ContentView: View {
                     .resizable()
                 // 画面に収まるように、アスペクト比を維持する指定
                     .scaledToFit()
+                // スペースを追加
+                Spacer()
                 // じゃんけんの種類を指定
                 Text("チョキ")
+                // 下辺に余白を設定
+                    .padding(.bottom)
             }
             // [じゃんけんをする！]ボタン
             Button {
@@ -65,6 +79,14 @@ struct ContentView: View {
             } label: {
             // Buttonに表示する文字を指定
                 Text("じゃんけんをする！")
+                    // 画面いっぱい
+                    .frame(maxWidth: .infinity)
+                    // Textのサイズ
+                    .frame(height:100)
+                    // title:iOS組み込みフォントサイズ
+                    .font(.title)
+                    .background(Color.pink)
+                    .foregroundColor(Color.white)
             }// [じゃんけんをする！]ボタンはここまで
            
         }
