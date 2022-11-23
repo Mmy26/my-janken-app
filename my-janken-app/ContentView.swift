@@ -52,7 +52,7 @@ struct ContentView: View {
             // [じゃんけんをする！]ボタン
             Button {
             // Buttonがタップされた時の動き
-                answerNumber = answerNumber + 1
+                answerNumber = Int.random(in: 1...3)
             } label: {
             // Buttonに表示する文字を指定
                 Text("じゃんけんをする！")
