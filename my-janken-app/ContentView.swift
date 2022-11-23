@@ -51,8 +51,17 @@ struct ContentView: View {
             }
             // [じゃんけんをする！]ボタン
             Button {
-            // Buttonがタップされた時の動き
-                answerNumber = Int.random(in: 1...3)
+             // 新しいじゃんけんの結果を一時的に格納する変数を設ける
+                var newAnswerNumber = 0
+             // ランダムに結果を出すが、前回と異なる場合は採用
+             // repeatは繰り返しを意味する
+                repeat{
+                    // 1,2,3の数値をランダムに算出(乱数)
+                    newAnswerNumber = Int.random(in: 1...3)
+                    // 前回と同じ結果の時は、再度ランダムに数値を算出
+                    // 異なる結果の時は、repeatを抜ける
+                } while answerNumber == newAnswerNumber
+                answerNumber = newAnswerNumber
             } label: {
             // Buttonに表示する文字を指定
                 Text("じゃんけんをする！")
